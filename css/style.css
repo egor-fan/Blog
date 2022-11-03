@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400:500;700;900&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+}
+.left{
+  max-width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #202020;
+  box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
+}
+body .rigth{
+  display: flex;
+}
+img{
+  max-width: 100%;
+}
+.avatar{
+  display: flex;
+  margin-top: -21%;
+}
+.left_name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 3px;
+}
+.prof{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #DEDEDE;
+  margin-bottom: 15px;
+}
+.left_icons{
+  display: flex;
+  margin-bottom: 30px;
+}
+.icons:not(:last-child){
+  margin-right: 15px;
+}
+.line{
+  width: 80%;
+  height: 1px;
+  background-color:#1C1C1C;
+  margin-bottom: 30px;
+}
+.left_text{
+  padding: 0 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.left_button{
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 13px 20px;
+}
+.btn_work{
+  background: #ED3024;
+  box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+  border-radius: 25px;
+  margin-right: 20px;
+}
+.btn_write{
+  background: #3137C9;
+  box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+  border-radius: 25px;
+}
+.nav{
+  height: 39px;
+  background: #0D0D0D;
+}
+.menu li{
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  padding: 13px 15px;
+  background: #0D0D0D;
+}
+.menu{
+  display: flex;
+}
+.menu li:nth-child(2):after{
+  content: url("../img/arrow.svg");
+  position: relative;
+  width: 20px;
+  left: 10px;
+  top: -2px;
+}
+.menu li:nth-child(4){
+  margin-right: 75px;
+}
+.searchbar{
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  background: #202020;
+  padding: 12px 40px 13px 20px;
+  border: none;
+  outline: none;
+}
