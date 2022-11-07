@@ -259,7 +259,7 @@ img{
   font-size: 15px;
   line-height: 18px;
   color: #D2D2D2;
-  max-width: 440px;
+  width: 440px;
   height: 74px;
   outline: none;
 }
