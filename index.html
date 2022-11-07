@@ -36,19 +36,141 @@
         <div class="btn btn_write">Написать мне</div>
       </div>
     </div>
-    <div class="rigth">
-      <div class="nav">
-        <ul class="menu">
-          <li>Главная</li>
-          <li>Статьи</li>
-          <li>Обо мне</li>
-          <li>Реклама</li>
-          <li>Профиль</li>
-        </ul>
+    <div class="main">
+      <div class="rigth">
+        <div class="nav">
+          <ul class="menu">
+            <li>Главная</li>
+            <li id="arrow">
+              Статьи
+              <ul class="dropdown">
+                <li><a href="#">Создание сайтов</a></li>
+                <li><a href="#">Интернет-маркетинг</a></li>
+                <li><a href="#">Продвижение видео</a></li>
+              </ul>
+            </li>
+            <li>Обо мне</li>
+            <li>Реклама</li>
+            <li>Профиль</li>
+          </ul>
+        </div>
+        <form class="search">
+          <input type="text" maxlength="12" placeholder="Поиск по блогу" class="searchbar">
+        </form>
       </div>
-      <form class="search">
-        <input type="text" maxlength="12" placeholder="Поиск по блогу" class="searchbar">
-      </form>
+      <div class="right_container">
+        <div class="stories">
+          <div class="story story1">
+            <div class="story_text">
+              <p>Отдыхаю на природе</p>
+              <p>21.09.2020</p>
+            </div>
+          </div>
+          <div class="story story2">
+            <div class="story_text">
+              <p>Заканчиваю
+                сложный проект</p>
+              <p>15.09.2020</p>
+            </div>
+          </div>
+          <div class="story story3">
+            <div class="story_text">
+              <p>Переехал в новую
+                квартиру</p>
+              <p>11.09.2020</p>
+            </div>
+          </div>
+          <div class="story story4">
+            <div class="story_text">
+              <p>Осень пришла!</p>
+              <p>28.08.2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="write">
+          <form>
+            <input type="text" value="Напишите что-нибудь...">
+          </form>
+          <div class="inputIcons">
+            <img src="/img/IconInputFoto.png" alt="">
+            <img src="/img/IconInputMess.png" alt="">
+          </div>
+        </div>
+        <div class="post">
+          <p class="post_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
+            urna. Et
+            vestibulum,
+            posuere
+            tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+            lacinia
+            eu auctor
+            nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+          <p class="date">21.06.2020</p>
+        </div>
+        <div class="post post1">
+          <img src="/img/post1Img.jpg" alt="">
+          <h2>Как писать код быстро и безболезненно?</h2>
+          <div class="post_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+            vestibulum,
+            posuere
+            tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+            lacinia
+            eu auctor
+            nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+          </div>
+          <div class="post_bottom">
+            <div class="post_bottom__left">
+              <div class="date">21.06.2020</div>
+              <div class="dot"></div>
+              <div class="bottom_text">создание сайтов</div>
+            </div>
+            <div class="post_bottom__right">читать</div>
+          </div>
+        </div>
+        <div class="post post2">
+          <iframe width="550" height="280" src="https://www.youtube.com/embed/C9l9bRkvoW4" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <h2>Купил новый ноутбук за 150 000 руб</h2>
+          <div class="post_bottom">
+            <div class="post_bottom__left">
+              <div class="date">21.06.2020</div>
+              <div class="dot"></div>
+              <div class="bottom_text">продвижение видео</div>
+            </div>
+            <div class="post_bottom__right">оставить комментарий</div>
+          </div>
+        </div>
+        <div class="post post3">
+          <img src="/img/post3Img.png" alt="">
+          <h2>Как я сходил на FrontEnd Conf 2021</h2>
+          <div class="post_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+            vestibulum,
+            posuere
+            tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+            lacinia
+            eu auctor
+            nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+          </div>
+          <div class="post_bottom">
+            <div class="post_bottom__left">
+              <div class="date">21.06.2020</div>
+              <div class="dot"></div>
+              <div class="bottom_text">создание сайтов</div>
+            </div>
+            <div class="post_bottom__right">читать</div>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="navBtn"><span>&lt;</span></div>
+          <div class="navBtn"><span>1</span></div>
+          <div class="navBtn"><span>2</span></div>
+          <div class="navBtn"><span>3</span></div>
+          <div class="navBtn"><span>&gt;</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
