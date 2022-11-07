@@ -348,6 +348,9 @@ h2{
   font-size: 14px;
   line-height: 16px;
 }
+.navBtn:nth-child(3){
+  background: #104BE3;
+}
 .navBtn:hover{
   background: #104BE3;
 }
