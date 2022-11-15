@@ -28,6 +28,15 @@ img,
 .btn{
   cursor: pointer;
 }
+.nav_burger{
+  display: none;
+}
+.burger_container{
+  display: none;
+}
+.menu_burger{
+  display: none;
+}
 
 /**Выпадающее меню**/
 .dropdown{
@@ -362,4 +371,110 @@ h2{
 }
 .btn_work:hover{
 
+}
+
+
+@media (max-width: 970px){
+  .menu li {
+    padding: 13px 10px;
+  }
+  .searchbar {
+    padding: 13px 40px 12px 20px;
+  }
+}
+@media (max-width: 899px) {
+  .menu li:nth-child(4) {
+    margin-right: 40px;
+  }
+  .left_button {
+    flex-direction: column;
+  }
+  .btn_work{
+    margin: 0 0 20px 0;
+  }
+  .btn{
+    min-width: 115px;
+    text-align: center;
+  }
+}
+@media (max-width: 785px){
+  .container{
+    justify-content: center;
+  }
+  .main{
+    position: relative;
+  }
+  .searchbar {
+    font-size: 14px;
+    padding: 17px 40px 17px 20px;
+  }
+  .left{
+    display: none;
+    max-width: 63%;
+  }
+  ul.menu{
+    display: none;
+  }
+  .rigth {
+    justify-content: space-between;
+    height: 51px;
+    margin-bottom: 20px;
+    background-color: #0D0D0D;
+  }
+  .burger_container{
+    display: flex;
+  }
+  .nav_burger{
+    margin: 10px 0 0 20px;
+    top: 2px;
+    z-index: 20;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    display: block;
+  }
+  .nav_burger span {
+    position: absolute;
+    background-color: #ffffff;
+    width: 85%;
+    height: 2px;
+    top: calc(50% - 2px);
+    transition: all 0.3s ease 0s;
+  }
+  .nav_burger:before,
+  .nav_burger:after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 85%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .nav_burger:before {
+    top: 0;
+  }
+  .nav_burger:after {
+    bottom: 0;
+  }
+  .menu_burger {
+    display: flex;
+    position: fixed;
+    top: -100%;
+    
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(72 72 72 / 95%);
+    z-index: 10;
+    transition: all 1s ease 0s;
+  }
+  .menu_burger.active{
+    left: 0%;
+    top: 51px;
+    position: absolute;
+  }
+  .left_burger{
+    display: block;
+  }
 }
